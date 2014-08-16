@@ -197,7 +197,14 @@ body {
 			text-align: left;
 			position: relative;
 			color: #454545;
-		}
+					}
+		.containerimage
+		{
+			margin-left: auto;
+			margin-right: auto;
+			/*width: 100px;*/
+			/*height: 60px; */
+		}			
 		.panel-textcolor-light .container { color: #FFF; }
 			.panel-textcolor-light .container a { color: #FFF; }
 
@@ -562,6 +569,7 @@ body {
 			margin: 0 0 1px 1px;
 			float: left;
 			display: block;
+
 		
 		}
 		.grid .grid-item-octet { width: 150px; }
