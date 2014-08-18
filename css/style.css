@@ -527,7 +527,8 @@ body {
 		margin: 0 -30px 20px 0;
 	}
 		.col { float: left; }
-			.col-inner { margin: 0 30px 0 0; }
+			.col-inner { margin: 0 30px 0 0; 
+						}
 	
 		.cols-half-half .col-a, 
 		.cols-half-half .col-b { width: 50%; } 
