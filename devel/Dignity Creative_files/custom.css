@@ -4,7 +4,6 @@ a,
 .toggle-active h3.toggle-heading,
 .panel-heading h1, 
 .panel-heading h2 { color: #3c639d; }
-/*3c639d*/
 
 .button, 
 #site-nav ul li ul, 
@@ -18,7 +17,7 @@ a,
 
 /* Sections */
 
-#banner { background: #000; }
+#banner { background: #FFF; }
 #call-to-action { background: #f9f9f9; border-bottom: 5px solid #f2f2f2; padding: 35px 0 30px 0; }
 #about { background: #FFF; } 
 #about-b { background: #f9f9f9; padding: 50px 0 20px 0; border-top: 2px solid #f2f2f2; border-bottom: 2px solid #f2f2f2; }
@@ -29,7 +28,7 @@ a,
 #testimonials { }
 	#testimonials .container { text-align: center; }
 #parallax { color: #FFF; padding: 140px 0 130px 0; }
-	#parallax .parallax { background-image: url(../images/slider/Matsya3-par.jpg); }
+	#parallax .parallax { background-image: url(../images/demo/banner-slide-3.jpg); }
 	#parallax .call-out h2 { color: #FFF; }
 #clients { background: #FFF; }
 #blog { background: #f9f9f9; border-top: 5px solid #f2f2f2; border-bottom: 5px solid #f2f2f2; }
