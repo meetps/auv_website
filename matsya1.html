@@ -9,7 +9,7 @@
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>AUV-IITB</title>
+	<title>Matsya 1.0</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<!-- Fonts -->
@@ -22,7 +22,8 @@
 	<link href="./css/style.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
 	<link href="./css/responsive.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
 	<link href="./css/custom.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
-	
+	<link href="./css/navbar.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
+
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="./js/modernizr.js"></script>
 	<link href="./css/ie.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
@@ -41,7 +42,7 @@
 			
 			<a href="#" class="toggle-site-nav show-on-mobile show-on-tablet"><i class="icon-reorder"></i></a>
 			
-			<nav id="site-nav">
+			<!-- <nav id="site-nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="./index.html#about">AUVs</a>
@@ -75,11 +76,50 @@
 					<li><a href="./index.html#sponsors">Sponsors</a></li>
 					<li><a href="./index.html#contact">Contact</a></li>
 				</ul>
-			</nav><!-- end site nav -->
+			</nav>
+			-->
+			<!-- end site nav -->
 			
 		</div>
 	</header><!-- end site header -->
 
+
+<div id='cssmenu'>
+<ul>
+   <li ><a href='./index.html#'><span>Home</span></a></li>
+   <li><a href='./index.html#about'><span>AUVs</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Matsya 1.0</span></a>
+            <ul>
+               <li><a href='./matsya1.html#elec'><span>Electrical</span></a></li>
+               <li><a href='./matsya1.html#mech'><span>Mechanical</span></a></li>
+               <li class='last'><a href='./matsya1.html#soft'><span>Software</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Matsya 2.0</span></a>
+            <ul>
+               <li><a href='./matsya2.html#elec'><span>Electrical</span></a></li>
+               <li><a href='./matsya2.html#mech'><span>Mechanical</span></a></li>
+               <li class='last'><a href='./matsya2.html#soft'><span>Software</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Matsya 3.0</span></a>
+            <ul>
+               <li><a href='./matsya3.html#elec'><span>Electrical</span></a></li>
+               <li><a href='./matsya3.html#mech'><span>Mechanical</span></a></li>
+               <li class='last'><a href='./matsya3.html#soft'><span>Software</span></a></li>
+            </ul>
+         </li>
+         
+      </ul>
+   </li>
+   <li><a href='./index.html#team'><span>Team</span></a></li>
+   <li><a href='./index.html#gallery'><span>Gallery</span></a></li>
+   <li><a href='./index.html#blog'><span>Blog</span></a></li>
+   <li><a href='./index.html#sponsors'><span>Sponsors</span></a></li>
+   <li class='last'><a href='./index.html#contact'><span>Contact</span></a></li>
+</ul>
+</div>
 
 	<!-- Elec -->
 	<div id="elec" class="panel">
@@ -90,10 +130,8 @@
 				<div class="col col-a">
 					<div class="col-inner">
 					
-						<!-- <p><img src="./images/demo/about-image-2.png" alt="" class="alignright" /> -->
-						<p>
-						<iframe width="640" height="480" src="https://sketchfab.com/models/28760b3d4ac64d8ab3796dc5804d6159/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-						</p>
+						<p><img src="./images/matsya1/elec1.jpg" alt="" class="alignright" />
+						</p> 
 						
 					</div>
 				</div><!-- end col -->
@@ -101,47 +139,57 @@
 				<div class="col col-b">
 					<div class="col-inner">
 						
-						<h3><br/>Our Latest AUV  </h3>
+						<h3><br/>Electronics Subsystem  </h3>
 						<br/>
 						<div class="accordion">
 							<div class="toggle toggle-active">
 								<h3 class="toggle-heading">
 									Prototyping
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p> With the great bunch of experience we acquired at Robosub 2013, the sub-divisions came up with innovative solutions to tackle the worst of problems </p>
+									<p>Matsya's electronic system contains all power and serial infrastructure to support the vehicle's sensors, actuators, and computer. All boards in the power, serial, sensor control and actuator control subsystems were designed and populated by team members.</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Design
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Power Management System
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>Keeping in mind the mistakes from previous designs and the changes that the vehicle was undergoing, a modern, robust and economical  design was made to meet all the needs of the team.</p>
+									<p>The power board performs the following functions </br>
+									1. Battery Management :</br>
+										a. Battery protection from overdischarge</br>
+									    b. Measurement of power consumption and report to SBC for characterization purposes</br>
+									    c. Battery state monitoring</br>
+									2. Voltage regulation and power distribution</br>
+									a. Temperature control inside the hull by monitoring temperature at different points on the hull and power kill if temperature exceeds a certain threshold</br>
+									b. Visual and digital detection of faulty power lines and report to SBC on the status of power lines.</br></p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Development
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Motion Controller Board
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>Keeping in mind the above points the journey meandered into the development phase with the help of our industrial collaborations and the team's technical know-how.</p>
+									<p>The motion controller board receives desired values of control variables from the SBC and controls the thrusters based on data from feedback elements. Following are the features </br>
+									1. Feedback taken from IMU(orientation), pressure sensor(depth)	</br>
+									2. Non linear controller using the basic system dynamic equations</br>
+									3. Real time controller with provision of decoupling pitch and yaw</br></p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Testing
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Single Board Computer
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>The last and the toughest of all phases came and the team was ready to test the vehicle and remove the minutest of bugs in the design and resolve it to ensure a good performance and reliabilty.</p>
+									<p>The PandaBoard is a low-power, low-cost single board computer development platform based on the Texas Instruments OMAP4430 system on a chip (SoC). The PandaBoard ES is a newer version with the CPU and GPU running at higher clock rates. The PandaBoard ES uses a newer SoC, with a dual-core 1.2 GHz CPU and 384 MHz GPU. Image processing and mission planner are implemented on Embedded Linux.</p>
 								</div>
 							</div><!-- end toggle -->
 						</div><!-- end accordion -->
@@ -162,60 +210,55 @@
 			<div class="cols cols-twothirds-third">
 			
 				<div class="col col-a">
-					<div class="col-inner">
 					
-						<!-- <p><img src="./images/demo/about-image-2.png" alt="" class="alignright" /> -->
-						<p>
-						<iframe width="640" height="480" src="https://sketchfab.com/models/28760b3d4ac64d8ab3796dc5804d6159/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-						</p>
-						
-					</div>
+						<div class="vehicle-pic1"><img src="./images/matsya1/mech.jpg" alt="" class="alignleft" /> </div>
+					
 				</div><!-- end col -->
 			
 				<div class="col col-b">
 					<div class="col-inner">
 						
-						<h3><br/>Our Latest AUV  </h3>
+						<h3><br/>Mechanical Subdivision</h3>
 						<br/>
 						<div class="accordion">
 							<div class="toggle toggle-active">
 								<h3 class="toggle-heading">
 									Prototyping
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p> With the great bunch of experience we acquired at Robosub 2013, the sub-divisions came up with innovative solutions to tackle the worst of problems </p>
+									<p> The AUV is designed with emphasis on reliability and simplicity. As robustness is the key of any system, it is the basis of all design considerations</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Design
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Compact Size
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>Keeping in mind the mistakes from previous designs and the changes that the vehicle was undergoing, a modern, robust and economical  design was made to meet all the needs of the team.</p>
+									<p>Efficient placement of thrusters, electronics and cameras to reduce the overall size and reduce drag co-efficient</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Development
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Ergonomic Design
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>Keeping in mind the above points the journey meandered into the development phase with the help of our industrial collaborations and the team's technical know-how.</p>
+									<p>Light hull - Use of acrylic hull along with planned internal component placement has made the AUV lighter. Easily adaptable configurationmade using Aluminium 8020 sections along with custom holders and fasteners allows us to easily change the relative configurations and give maximum maneuverability</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Testing
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Optimized Component Placement
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>The last and the toughest of all phases came and the team was ready to test the vehicle and remove the minutest of bugs in the design and resolve it to ensure a good performance and reliabilty.</p>
+									<p>Optimal thrusters configuration with Five thrusters placed so as to provide 5 Degrees of Freedom except 'sway'. This configuration suffices the requirement alongwith reducing overall weight and cost. Efficient thermal dissipation as the Heat dissipating elements placed near Aluminium end cap. Also water currents generated by the back thruster would increase convective heat transfer and thus help in keeping internal temperature regulated. </p>
 								</div>
 							</div><!-- end toggle -->
 						</div><!-- end accordion -->
@@ -235,934 +278,83 @@
 			
 			<div class="cols cols-twothirds-third">
 			
+				
 				<div class="col col-a">
 					<div class="col-inner">
 					
-						<!-- <p><img src="./images/demo/about-image-2.png" alt="" class="alignright" /> -->
-						<p>
-						<iframe width="640" height="480" src="https://sketchfab.com/models/28760b3d4ac64d8ab3796dc5804d6159/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-						</p>
-						
+						 <img src="./images/matsya1/soft2.png" width="500px" height="300px" alt="" class="alignleft" />	
 					</div>
-				</div><!-- end col -->
-			
+				</div>
+
+
 				<div class="col col-b">
 					<div class="col-inner">
 						
-						<h3><br/>Our Latest AUV  </h3>
+						<h3><br/>Software Subdivision</h3>
 						<br/>
 						<div class="accordion">
 							<div class="toggle toggle-active">
 								<h3 class="toggle-heading">
 									Prototyping
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p> With the great bunch of experience we acquired at Robosub 2013, the sub-divisions came up with innovative solutions to tackle the worst of problems </p>
+									<p> The software system is responsible for mission planing and all the higher level functionality. Matysa runs a custom middeware to provide a neat interface for the applications. The linux kernel provides a complicated interface for safe interprocess communication. It would be very tedious for every software developer in the Matsya team to manage safe interprocess communication and device IO.</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Design
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Mission Planner
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>Keeping in mind the mistakes from previous designs and the changes that the vehicle was undergoing, a modern, robust and economical  design was made to meet all the needs of the team.</p>
+									<p>This process runs the mission planning algorithms and maintains the state of the machine</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Development
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Image Processor
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>Keeping in mind the above points the journey meandered into the development phase with the help of our industrial collaborations and the team's technical know-how.</p>
+									<p>This process receives the state of the machine from the mission planner and runs the corresponding image processing algorithm</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Testing
-									<i class="toggle-down icon-plus"></i>
-									<i class="toggle-up icon-minus"></i>
+									Communicator
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>The last and the toughest of all phases came and the team was ready to test the vehicle and remove the minutest of bugs in the design and resolve it to ensure a good performance and reliabilty.</p>
+									<p>This process is the abstract interface to the other micro controller boards in the system</p>
 								</div>
-							</div><!-- end toggle -->
+							</div>
+							<div class="toggle">
+								<h3 class="toggle-heading">
+									Debugging Platform
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
+								</h3>
+								<div class="toggle-content">
+									<p>Matsya's debug platform provides on a web-based interface. A web-server (Apache 2) runs on the Pandaboard and listens for user requests. A user can send requests through any browser. This means that any person with a browser and a network access can send requests to Matsya debugging platform</p>
+								</div>
+							</div>
+							<!-- end toggle -->
 						</div><!-- end accordion -->
 					
 					</div>
 				</div><!-- end col -->
+			<img src="./images/matsya1/soft1.png" width="500px" height="300px" alt="" class="alignleft" />
 				
 			</div><!-- end cols -->
 			
 		</div>
 	</div>
 
-	<!-- WORK SECTION -->
-	<div id="work" class="panel">
-		<div class="container">	
-			
-			<header class="panel-heading">
-			
-				<h2>Gallery</h2>
-				
-				<a href="#" class="toggle-gallery-filter show-on-mobile"><i class="icon-reorder"></i></a>
-				
-				<nav class="gallery-filter">
-					<ul>
-						<li class="active"><a href="#" data-filter="*">All</a></li>
-						<li><a href="#" data-filter=".2014">2014</a></li>
-						<li><a href="#" data-filter=".2013">
-						2013</a></li>
-						<li><a href="#" data-filter=".2012">2012</a></li>
-						<li><a href="#" data-filter=".2011">
-						2011</a></li>
-					</ul>
-				</nav>
-				
-			</header><!-- end heading -->
-			
-			
-			<ul class="gallery">
-							
-				<li class="2014">
-					<a href="#" class="2014"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-1.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-1-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Marketplace</p> -->
-						</div>
-					</a>
-				</li>
-				
-				<li class="2013">
-					<a href="#" class="2013"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-2.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-2-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Education</p> -->
-						</div>
-					</a>
-				</li>
-				
-				<li class="2012">
-					<a href="#" class="2012"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-3.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-3-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Marketplace</p> -->
-						</div>
-					</a>
-				</li>
-				
-				<li class="2013">
-					<a href="#" class="2011"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-4.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-4-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Gallery</p> -->
-						</div>
-					</a>
-				</li>
-				
-				<li class="2013">
-					<a href="#" class="2014"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-5.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-5-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Education</p> -->
-						</div>
-					</a>
-				</li>
-				
-				<li class="2011">
-					<a href="#" class="2014"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-6.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-6-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Company</p> -->
-						</div>
-					</a>
-				</li>
-				
-				<li class="2012">
-					<a href="#" class="2013"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-7.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-7-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Company</p> -->
-						</div>
-					</a>
-				</li>
-				
-				
-				<li class="2014">
-					<a href="#" class="2011"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-9.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-9-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Company</p> -->
-						</div>
-					</a>
-				</li>
-
-				<li class="2014">
-					<a href="#" class="2011"><i class="icon-link"></i></a>
-					<a href="./images/demo/gallery-9.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-9-thumb.jpg" alt="" />
-						<span class="item-overlay"></span>
-						<span class="item-zoom"><i class="icon-search"></i></span>
-						<div class="item-content">
-							<h3 style="color:white;font-size:40px;">Team Treat</h3>
-							<!-- <p>Company</p> -->
-						</div>
-					</a>
-				</li>
-
-								
-			</ul><!-- end gallery -->		
-			
-			<div class="clearfix"></div>
-		</div>
-	</div><!-- end work -->
-	
-	
-	<!-- SERVICES SECTION -->
-	<div id="services" class="panel">
-		<div class="container">	
-			
-			<header class="panel-heading">
-				<h2>Sponsors</h2>
-				<h4>The Financial Backbones of our team.</h4>
-			</header>
-			
-			<div class="cols cols-half-half">
-			
-				<div class="col col-a">
-					<div class="col-inner">
-					
-						<img src="images/sponsors/iitb-logo.jpg"></img>	
-						</br>
-						<h2>Chief Patron</h2>
-						<p></p>
-					
-					</div>
-				</div><!-- end col -->
-			
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/ongc-logo.jpg"></img>
-						</br>
-						</br>
-						</br>
-						<h2>Associate Sponsors</h2>
-						<p></p>
-					
-					</div>
-				</div><!-- end col -->
-			
-			</div><!-- end cols -->
-			
-			<div class="col cols-third-third-third">
-				
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/teledyne	.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-								
-				<div class="col col-a">
-					<div class="col-inner">
-						
-						<img src="images/sponsors/vectornav.png"></img>
-					</div>
-				</div><!-- end col -->
-			
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/mvr.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-
-			</div><!-- end cols -->
-
-
-			<div class="col cols-third-third-third">
-				
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/zephyr.png"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-				<span style="display:inline-block; width:500px;"></span>				
-				<div class="col col-a">
-					<div class="col-inner">
-						
-						<img src="images/sponsors/pcbpower.jpg"></img>
-						</br>
-						</br>
-						</br>
-						</br>
-						</br>
-						</br>
-						<h2> <span style="display:inline-block; width:100px;"></span>   Powered by </h2>
-						<p></p>
-					
-					</div>
-				</div><!-- end col -->
-				
-				<span style="display:inline-block; width:100px;"></span>
-
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/headrush.gif"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-
-			</div><!-- end cols -->
-
-			<div class="col cols-third-third-third">
-				
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/leddartech.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-								
-				<div class="col col-a">
-					<div class="col-inner">
-						
-						<img src="images/sponsors/jwfishers.jpg"></img>
-					</div>
-				</div><!-- end col -->
-			
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/seabotix.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-
-			</div><!-- end cols -->
-
-
-			<div class="col cols-third-third-third">
-				
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/solidworks.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-				<span style="display:inline-block; width:500px;"></span>				
-				<div class="col col-a">
-					<div class="col-inner">
-						
-						<img src="images/sponsors/unicorn.jpg"></img>
-						</br>
-						</br>
-						</br>
-						</br>
-						<h2> <span style="display:inline-block; width:100px;"></span>   Special Mention </h2>
-						<p></p>
-					
-					</div>
-				</div><!-- end col -->
-				
-				<span style="display:inline-block; width:100px;"></span>
-
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/johnson.jpeg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-
-			</div><!-- end cols -->
-			
-		</div>
-	</div><!-- end services -->
-	
-	
-	<!-- TEAM SECTION -->
-	<div id="team" class="panel">
-		<div class="container">	
-			
-			<header class="panel-heading">
-				<h2>Our Team</h2>
-				<h4>A team of amazing people doing amazing things</h4>
-			</header>
-			
-			<div class="grid">
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile" >
-						<img src="./images/demo/team-1.jpg" alt="" />
-						<span class="team-profile-overlay">
-						</span>
-						<div class="team-profile-content">
-							<h2>Mihir Gupta</h2>
-							<h4>Head</h4>
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-gmail"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-2.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Nilesh Kulkarni</h2>
-							<h4>Software</h4>
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-pinterest"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-					</div>
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-5.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Sharon Smith</h2>
-							<h4>Accounts Manager</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-6.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Zak Josephs</h2>
-							<h4>Photographer</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-youtube"></a>
-									<a href="#" class="social-icon social-icon-flickr"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-7.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Rhonda Jones</h2>
-							<h4>Sales Executive</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-			
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-8.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Thomas Tank</h2>
-							<h4>Design Intern</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-
-				<div class="grid-item grid-item-octet">
-					<div class="team-profile">
-						<img src="./images/demo/team-3.jpg" alt="" />
-						<span class="team-profile-overlay"></span>
-						<div class="team-profile-content">
-							<h2>Hardik Godara</h2>
-							<h4>Electronics</h4>							
-							<div class="hidden">
-								<p></p>
-								<div class="social social-small">
-									<a href="#" class="social-icon social-icon-twitter"></a>
-									<a href="#" class="social-icon social-icon-facebook"></a>
-									<a href="#" class="social-icon social-icon-linkedin"></a>
-								</div>
-							</div>
-						</div>
-					</div><!-- end team profile -->
-				</div>
-			
-			</div><!-- end grid -->
-			
-		</div>
-	</div><!-- end team -->
-	
-	
-	<!-- TESTIMONIALS SECTION -->
-	<!--<div id="testimonials" class="panel">
-		<div class="container">	
-			
-			<header class="panel-heading">
-				<h2>Testimonials</h2>
-				<h4>What our clients think about us</h4>
-			</header>
-			
-			<div class="testimonials">
-				
-				<i class="icon-quote-left"></i>
-				<i class="icon-quote-right"></i>
-				
-				<ul class="testimonial-quotes">
-					<li>
-						<blockquote>
-							<p>I used this company for my new website, what they did was just stunning, the quality and attention to detail they showed was second to none. They listened to all my ideas and moulded them into an amazing site that has already seen me gain a number of high profile contracts.</p>
-						</blockquote>
-						<div class="credit">
-							Joe Bloggs<br/>
-							<strong><a href="#">ABC Company</a></strong>
-						</div>
-					</li>
-					
-					<li>
-						<blockquote>
-							<p>Suspendisse a libero lorem, sit amet tincidunt ipsum. Aliquam sed lorem id dui tincidunt gravida a sed risus. Etiam imperdiet, odio at vestibulum laoreet, risus neque sollicitudin leo, et viverra nisi leo sed arcu. Aenean enim nibh, adipiscing a hendrerit eu, tempor a metus.</p>
-						</blockquote>
-						<div class="credit">
-							John Smith<br/>
-							<strong><a href="#">The Company</a></strong>
-						</div>
-					</li>
-					<li>
-						<blockquote>
-							<p>Aliquam et lacinia metus. Etiam ac purus ac urna sollicitudin sagittis a et nibh. Duis ante arcu, eleifend id venenatis semper, condimentum a massa. Maecenas ut turpis dolor. Integer tincidunt fermentum ante a mattis. Aenean ullamcorper, erat.</p>
-						</blockquote>
-						<div class="credit">
-							John Smith<br/>
-							<strong><a href="#">The Company</a></strong>
-						</div>
-					</li>
-					
-				</ul>
-			
-			</div>
-
-			
-		</div>
-	 </div> -->
-	<!-- end testimonials -->
-	
-	
-	<!-- PARALLAX SECTION -->
-	<div id="parallax" class="panel">
-		<div class="parallax"><span class="overlay"></span></div>
-		<div class="container">	
-			
-			<section class="call-out">
-				<h2>Motivation </h2>
-				<h4>"Some Motivational Quote here - I cant recall any, I am drained, Good Night. "</h4>
-				<div class="social">
-					<a href="#" class="social-icon social-icon-twitter"></a>
-					<a href="#" class="social-icon social-icon-facebook"></a>
-					<a href="#" class="social-icon social-icon-gplus"></a>
-				</div>
-			</section>
-			
-		</div>
-	</div><!-- end parallax -->
-	
-	
-	<!-- CLIENTS SECTION -->
-	<!--  <div id="clients" class="panel">
-		<div class="container">
-			
-			<header class="panel-heading">
-				<h2>Chief Patron</h2>
-				<h4></h4>
-			</header>
-		
-			<ul class="client-logos">
-				<li><a href="#"><img src="./images/demo/client-logo-1.png" alt="" /></a></li>
-				<li><a href="#"><img src="./images/demo/client-logo-1.png" alt="" /></a></li>
-				<li><a href="#"><img src="./images/demo/client-logo-1.png" alt="" /></a></li>
-				<li><a href="#"><img src="./images/demo/client-logo-1.png" alt="" /></a></li>
-				<li><a href="#"><img src="./images/demo/client-logo-1.png" alt="" /></a></li>
-			</ul>
-			</div>
-			
-			
-	</div>
-	-->
-	<!-- end client logos -->
-	
-	
-	<!-- BLOG SECTION -->
-	<div id="blog" class="panel">
-		<div class="container">	
-			
-			<header class="panel-heading">
-				<h2>Blog</h2>
-				<h4>Our thoughts,ideas and latest updates <a href="#">view all posts</a></h4>
-			</header>
-			
-			<div class="grid blog-posts">
-			
-				<a href="blog-post.html" class="grid-item grid-item-twothirds blog-post">
-					<img src="./images/demo/blog-1.jpg" alt="" />
-					<span class="blog-post-overlay"></span>
-					<span class="blog-post-icon"><i class="icon-edit"></i></span>
-					<div class="blog-post-content">
-						<span class="date">18 August 2014</span>
-						<h2>New Modernized Website launched.</h2>
-						<div class="hidden">
-							<p>In an effort to improve public exposure and keeping up with new web technologies , AUV-IITB finally got its new long-due website in place.</p>
-						</div>
-					</div>
-				</a>
-			
-				<a href="blog-post.html" class="grid-item grid-item-third blog-post">
-					<img src="./images/demo/blog-2.jpg" alt="" />
-					<span class="blog-post-overlay"></span>
-					<span class="blog-post-icon"><i class="icon-edit"></i></span>
-					<div class="blog-post-content">
-						<span class="date">18 May 2013</span>
-						<h2>Team Performance at Robosub 2014</h2>
-						<div class="hidden">
-							<p>Members of the Team share their experience at their 3rd robosub and discuss the issues faced and their attempts to solve them.</p>
-						</div>
-					</div>
-				</a>
-			
-				<a href="blog-post.html" class="grid-item grid-item-half blog-post">
-					<img src="./images/demo/blog-3.jpg" alt="" />
-					<span class="blog-post-overlay"></span>
-					<span class="blog-post-icon"><i class="icon-picture"></i></span>
-					<div class="blog-post-content">
-						<span class="date">15 May 2013</span>
-						<h2>Vehicle Shipped</h2>
-						<div class="hidden">
-							<p>After 3 months of rigorous testing and quality assurance , Team finally retires for a week and is ready to take Robosub 2014. </p>
-						</div>
-					</div>
-				</a>
-			
-				<a href="blog-post.html" class="grid-item grid-item-half blog-post">
-					<img src="./images/demo/blog-4.jpg" alt="" />
-					<span class="blog-post-overlay"></span>
-					<span class="blog-post-icon"><i class="icon-edit"></i></span>
-					<div class="blog-post-content">
-						<span class="date">17 May 2013</span>
-						<h2>DVL Arrives</h2>
-						<div class="hidden">
-							<p>Much Awaited addition to the Vehicle the DVL (Doppler Velocity Log) arrives and the team pulls up its socks to test it in the limited time it has.</p>
-						</div>
-					</div>
-				</a>
-			
-			</div><!-- end grid -->
-			
-		</div>
-	</div><!-- end blog -->
-	
-	
 	<!-- CONTACT SECTION -->
 	<div id="contact" class="panel">
 			

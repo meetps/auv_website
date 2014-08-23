@@ -11,19 +11,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>AUV-IITB</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
+	<!-- Fonts --> 
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet">
+	<link href="./fonts/fontello/css/fontello.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
 	
 
 	<!-- CSS -->
 	<link href="./css/style.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
 	<link href="./css/responsive.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
 	<link href="./css/custom.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
-	
-	<!-- Fonts -->
-	<!-- <link href="./fonts/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" /> -->
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link href="./fonts/fontello/css/fontello.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+	<link href="./css/navbar.css" rel="stylesheet" type="text/css" media="screen" title="stylesheet" />
 	
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="./js/modernizr.js"></script>
@@ -43,7 +43,7 @@
 			
 			<a href="#" class="toggle-site-nav show-on-mobile show-on-tablet"><i class="icon-reorder"></i></a>
 			
-			<nav id="site-nav">
+			<!-- <nav id="site-nav"> 
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#about">AUVs</a>
@@ -77,11 +77,52 @@
 					<li><a href="#sponsors">Sponsors</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
-			</nav><!-- end site nav -->
+			</nav>
+			-->
+
+
+			<!-- end site nav -->
 			
 		</div>
 	</header><!-- end site header -->
-	
+
+
+<div id='cssmenu'>
+<ul>
+   <li ><a href='./index.html#'><span>Home</span></a></li>
+   <li><a href='./index.html#about'><span>AUVs</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Matsya 1.0</span></a>
+            <ul>
+               <li><a href='./matsya1.html#elec'><span>Electrical</span></a></li>
+               <li><a href='./matsya1.html#mech'><span>Mechanical</span></a></li>
+               <li class='last'><a href='./matsya1.html#soft'><span>Software</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Matsya 2.0</span></a>
+            <ul>
+               <li><a href='./matsya2.html#elec'><span>Electrical</span></a></li>
+               <li><a href='./matsya2.html#mech'><span>Mechanical</span></a></li>
+               <li class='last'><a href='./matsya2.html#soft'><span>Software</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Matsya 3.0</span></a>
+            <ul>
+               <li><a href='./matsya3.html#elec'><span>Electrical</span></a></li>
+               <li><a href='./matsya3.html#mech'><span>Mechanical</span></a></li>
+               <li class='last'><a href='./matsya3.html#soft'><span>Software</span></a></li>
+            </ul>
+         </li>
+         
+      </ul>
+   </li>
+   <li><a href='./index.html#team'><span>Team</span></a></li>
+   <li><a href='./index.html#gallery'><span>Gallery</span></a></li>
+   <li><a href='./index.html#blog'><span>Blog</span></a></li>
+   <li><a href='./index.html#sponsors'><span>Sponsors</span></a></li>
+   <li class='last'><a href='./index.html#contact'><span>Contact</span></a></li>
+</ul>
+</div>	
 	
 	<!-- BANNER SECTION -->
 	<div id="banner" class="panel">
@@ -465,7 +506,7 @@
 				<li class="2014">
 					<a href="#" class="2011"><i class="icon-link"></i></a>
 					<a href="./images/demo/gallery-9.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-9-thumb.jpg" alt="" />
+						<img src="./images/demo/gallery-7-thumb.jpg"  alt="" />
 						<span class="item-overlay"></span>
 						<span class="item-zoom"><i class="icon-search"></i></span>
 						<div class="item-content">
@@ -478,7 +519,7 @@
 				<li class="2014">
 					<a href="#" class="2011"><i class="icon-link"></i></a>
 					<a href="./images/demo/gallery-9.jpg" class="item-preview" title="Image in Gallery">
-						<img src="./images/demo/gallery-9-thumb.jpg" alt="" />
+						<img src="./images/demo/gallery-7-thumb.jpg" alt="" />
 						<span class="item-overlay"></span>
 						<span class="item-zoom"><i class="icon-search"></i></span>
 						<div class="item-content">
@@ -494,7 +535,6 @@
 			<div class="clearfix"></div>
 		</div>
 	</div><!-- end work -->
-	
 	
 	<!-- SERVICES SECTION -->
 	<div id="sponsors" class="panel">
@@ -512,6 +552,7 @@
 					
 						<img src="images/sponsors/iitb-logo.jpg"></img>	
 						</br>
+						</br>
 						<h2>Chief Patron</h2>
 						<p></p>
 					
@@ -521,6 +562,7 @@
 				<div class="col col-a">
 					<div class="col-inner">
 						<img src="images/sponsors/ongc-logo.jpg"></img>
+						</br>
 						</br>
 						</br>
 						</br>
@@ -536,20 +578,20 @@
 				
 				<div class="col col-a">
 					<div class="col-inner">
-						<img src="images/sponsors/teledyne	.jpg"></img>
+						<img src="images/sponsors/teledyne.jpg"></img>
 						<!-- <h2>Search Engine Optimization</h2> -->
 						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
 					</div>
 				</div><!-- end col -->
 								
-				<div class="col col-a">
+				<div class="col col-b">
 					<div class="col-inner">
 						
 						<img src="images/sponsors/vectornav.png"></img>
 					</div>
 				</div><!-- end col -->
 			
-				<div class="col col-a">
+				<div class="col col-c">
 					<div class="col-inner">
 						<img src="images/sponsors/mvr.jpg"></img>
 						<!-- <h2>Search Engine Optimization</h2> -->
@@ -560,108 +602,25 @@
 			</div><!-- end cols -->
 
 
-			<div class="col cols-third-third-third">
 				
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/zephyr.png"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-				<span style="display:inline-block; width:500px;"></span>				
-				<div class="col col-a">
-					<div class="col-inner">
-						
-						<img src="images/sponsors/pcbpower.jpg"></img>
-						</br>
-						</br>
-						</br>
-						</br>
-						</br>
-						</br>
-						<h2> <span style="display:inline-block; width:100px;"></span>   Powered by </h2>
-						<p></p>
-					
-					</div>
-				</div><!-- end col -->
-				
-				<span style="display:inline-block; width:100px;"></span>
-
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/headrush.gif"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-
-			</div><!-- end cols -->
-
-			<div class="col cols-third-third-third">
-				
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/leddartech.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-								
-				<div class="col col-a">
-					<div class="col-inner">
-						
-						<img src="images/sponsors/jwfishers.jpg"></img>
-					</div>
-				</div><!-- end col -->
-			
-				<div class="col col-a">
-					<div class="col-inner">
-						<img src="images/sponsors/seabotix.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-
-			</div><!-- end cols -->
-
-
-			<div class="col cols-third-third-third">
-				
-				<div class="col col-a">
-					<div class="col-inner">
+						<img src="images/sponsors/zephyr.png" width="360px" height="200px"></img>
+						<span style="display:inline-block; width:50px;"></span>
+						<img src="images/sponsors/pcbpower.jpg" width="360px" height="200px"></img>
+						<span style="display:inline-block; width:50px;"></span>
+						<img src="images/sponsors/headrush.gif" width="260px" height="200px"></img>
+						<span style="display:block; height:50px;"></span><h2 style="text-align:center;">  Powered by </h2>
+						<img src="images/sponsors/leddartech.jpg" width="260px" height="200px"></img>
+						<span style="display:inline-block; width:50px;"></span>
+						<img src="images/sponsors/jwfishers.jpg" width="260px" height="200px"></img>
 						<img src="images/sponsors/solidworks.jpg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-				<span style="display:inline-block; width:500px;"></span>				
-				<div class="col col-a">
-					<div class="col-inner">
-						
+						<span style="display:inline-block; width:50px;"></span>
 						<img src="images/sponsors/unicorn.jpg"></img>
-						</br>
-						</br>
-						</br>
-						</br>
-						<h2> <span style="display:inline-block; width:100px;"></span>   Special Mention </h2>
-						<p></p>
-					
-					</div>
-				</div><!-- end col -->
-				
-				<span style="display:inline-block; width:100px;"></span>
-
-				<div class="col col-a">
-					<div class="col-inner">
+						<span style="display:inline-block; width:250px;"></span>
+						<img src="images/sponsors/seabotix.jpg" width="260px" height="90px"></img>
+						<span style="display:inline-block; width:150px;"></span>
 						<img src="images/sponsors/johnson.jpeg"></img>
-						<!-- <h2>Search Engine Optimization</h2> -->
-						<!-- <p>Ut a sem sem, eget tincidunt lorem. Quisque sollicitudin, tortor sed condimentum interdum.</p> -->
-					</div>
-				</div><!-- end col -->
-
-			</div><!-- end cols -->
-			
+						<span style="display:block; height:50px;"></span><h2 style="text-align:center;">  Special Mention </h2>
+						
 		</div>
 	</div><!-- end services -->
 	
@@ -756,8 +715,8 @@
 						<img src="./images/team/Kunal.jpg" height="150px"  alt="" />
 						<span class="team-profile-overlay"></span>
 						<div class="team-profile-content">
-							<h2>The Sarcastic Fellow</h2>
-							<h4>Sarcasm + Software</h4>							
+							<h2>Kunal Tyagi</h2>
+							<h4>Software</h4>							
 							<div class="hidden">
 								<p></p>
 								<div class="social social-small">
