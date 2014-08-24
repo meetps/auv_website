@@ -120,147 +120,51 @@
    <li class='last'><a href='./index.html#contact'><span>Contact</span></a></li>
 </ul>
 </div>
-	<!-- Elec -->
-	<div id="elec" class="panel">
+
+<div id="about" class="panel">
 		<div class="container">
 			
-			<div class="cols cols-twothirds-third">
+			<header class="panel-heading">
+				<h2>Software Sub-Division</h2>
+				<!-- <h4>8 Departments | 4 Sub-Divisons | 1 Team | AUV-IITB</h4> -->
+			</header><!-- end heading -->
+			
+			<div class="cols cols-third-twothirds">
 			
 				<div class="col col-a">
 					<div class="col-inner">
-					
-						<p><img id='m3-elec' src="./images/matsya3/elec2.jpg"  width="100%" alt="" class="alignleft" />
-						</p> 
+						
+						<!-- <h5>A </h5> -->
+						<h3>Introduction</h3>
+						<p>The Software Stack of Matsya 3.0 has been
+developed on top of ROS (Robot Operating
+System), developed at Willow Garage. Also,
+the Gazebo simulator has been used to test
+the software before deploying it on the vehicle with the major emphasis being on developing Software Control Flow and Finite State Task Machine. The main design goals of the
+stack were to keep it extendable, independent
+and generic. ROS helped in meeting these
+design goals and keeping the software modular with different tasks clearly demarcated
+and distributed into various processes called
+nodes. The software is easily scal-
+able with respect to the tasks or missions that
+can be accomplished.
+</p>
+
+						<span style="display:block; height:100px;"></span>
+						<p><a href="pdf/Matsya3.pdf" class="button button-size-large">Find More in the Journal Paper</a></p>
+						<p>&nbsp;</p>
 						
 					</div>
 				</div><!-- end col -->
-			
-				<div class="col col-b">
-					<div class="col-inner">
-						
-						<h3><br/>Electronics Subsystem  </h3>
-						<br/>
-						<div class="accordion">
-							<div class="toggle toggle-active">
-								<h3 class="toggle-heading">
-									Prototyping
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>Matsya's electronic system contains all power and serial infrastructure to support the vehicle's sensors, actuators, and computer. All boards in the power, serial, sensor control and actuator control subsystems were designed and populated by team members.</p>
-								</div>
-							</div><!-- end toggle -->
-							<div class="toggle">
-								<h3 class="toggle-heading">
-									Power Management System
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>The power board performs the following functions </br>
-									1. Battery Management :</br>
-										a. Battery protection from overdischarge</br>
-									    b. Measurement of power consumption and report to SBC for characterization purposes</br>
-									    c. Battery state monitoring</br>
-									2. Voltage regulation and power distribution</br>
-									a. Temperature control inside the hull by monitoring temperature at different points on the hull and power kill if temperature exceeds a certain threshold</br>
-									b. Visual and digital detection of faulty power lines and report to SBC on the status of power lines.</br></p>
-								</div>
-							</div><!-- end toggle -->
-							<div class="toggle">
-								<h3 class="toggle-heading">
-									Motion Controller Board
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>The motion controller board receives desired values of control variables from the SBC and controls the thrusters based on data from feedback elements. Following are the features </br>
-									1. Feedback taken from IMU(orientation), pressure sensor(depth)	</br>
-									2. Non linear controller using the basic system dynamic equations</br>
-									3. Real time controller with provision of decoupling pitch and yaw</br></p>
-								</div>
-							</div><!-- end toggle -->
-							<div class="toggle">
-								<h3 class="toggle-heading">
-									Single Board Computer
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>The PandaBoard is a low-power, low-cost single board computer development platform based on the Texas Instruments OMAP4430 system on a chip (SoC). The PandaBoard ES is a newer version with the CPU and GPU running at higher clock rates. The PandaBoard ES uses a newer SoC, with a dual-core 1.2 GHz CPU and 384 MHz GPU. Image processing and mission planner are implemented on Embedded Linux.</p>
-								</div>
-							</div><!-- end toggle -->
-						</div><!-- end accordion -->
-					
-					</div>
-				</div><!-- end col -->
+				<div class="vehicle-pic">
+					<img src="./images/matsya3/soft3.png" height="400px" width="740px" alt=""  />
+					<p style="font-size:20px">Advanced Debug Interface</p>		
+				</div>
 				
-			</div><!-- end cols -->
-			
-		</div>
-	</div>
-	
-	<!-- Mech -->
-	
-    <div id="mech" class="panel">
-		<div class="container">
-			
-			<div class="cols cols-twothirds-third">
-			
-				<div class="col col-a">
-					
-						<div><img id='m3-mech' src="./images/matsya3/mech1.jpg" alt="" class="alignleft" /> </div>
-					
-				</div><!-- end col -->
-			
 				<div class="col col-b">
 					<div class="col-inner">
 						
-						<h3><br/>Mechanical Subdivision</h3>
-						<br/>
-						<div class="accordion">
-							<div class="toggle toggle-active">
-								<h3 class="toggle-heading">
-									Prototyping
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p> The AUV is designed with emphasis on reliability and simplicity. As robustness is the key of any system, it is the basis of all design considerations</p>
-								</div>
-							</div><!-- end toggle -->
-							<div class="toggle">
-								<h3 class="toggle-heading">
-									Compact Size
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>Efficient placement of thrusters, electronics and cameras to reduce the overall size and reduce drag co-efficient</p>
-								</div>
-							</div><!-- end toggle -->
-							<div class="toggle">
-								<h3 class="toggle-heading">
-									Ergonomic Design
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>Light hull - Use of acrylic hull along with planned internal component placement has made the AUV lighter. Easily adaptable configurationmade using Aluminium 8020 sections along with custom holders and fasteners allows us to easily change the relative configurations and give maximum maneuverability</p>
-								</div>
-							</div><!-- end toggle -->
-							<div class="toggle">
-								<h3 class="toggle-heading">
-									Optimized Component Placement
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>Optimal thrusters configuration with Five thrusters placed so as to provide 5 Degrees of Freedom except 'sway'. This configuration suffices the requirement alongwith reducing overall weight and cost. Efficient thermal dissipation as the Heat dissipating elements placed near Aluminium end cap. Also water currents generated by the back thruster would increase convective heat transfer and thus help in keeping internal temperature regulated. </p>
-								</div>
-							</div><!-- end toggle -->
-						</div><!-- end accordion -->
+						<!-- <p><img src="./images/1.png" height="500px" width="450px" alt=""  /></p> -->
 					
 					</div>
 				</div><!-- end col -->
@@ -275,25 +179,19 @@
 	<div id="soft" class="panel">
 		<div class="container">
 			
-			<div class="cols cols-third-third-third">
+			<div class="cols cols-twothirds-third">
 			
 				
 				<div class="col col-a">
 					<div class="col-inner">
-						 <img id='m3-soft' src="./images/matsya3/soft1.png" width="500px" height="500px" alt="" class="alignleft" />	
+						 <img id='m3-soft' src="./images/matsya3/soft1.png" style="margin-top:50px" width="500px" height="500px" alt="" class="alignleft" />	
 					</div>
 				</div>
+
 
 				<div class="col col-b">
 					<div class="col-inner">
-						 <img id='m3-soft' src="./images/matsya3/soft3.png" width="100%" height="400px" alt="" class="alignleft" />	
-					</div>
-				</div>
-
-
-				<div class="col col-c">
-					<div class="col-inner">
-						
+								
 						<h3><br/>Software Subdivision</h3>
 						<br/>
 						<div class="accordion">
@@ -309,32 +207,47 @@
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Mission Planner
+									Doppler Velocity Log Localization
 									<i class="toggle-down fa fa-plus"></i>
 									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>This process runs the mission planning algorithms and maintains the state of the machine</p>
+									<p>As a new addition to the vehicle the DVL offered Matysa to be localized to a better accuracy improving the task completion rates and assisting the Markov Localization algorithm.</p>
+								</div>
+							</div><!-- end toggle -->
+							
+
+							<div class="toggle">
+								<h3 class="toggle-heading">
+									Middle Ware
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
+								</h3>
+								<div class="toggle-content">
+									<p>Responsible for Inter Process Communication and Hardware Abstraction. The middle ware helps abstract out the micro-controllers and present them as ordinary processes running on the SBC. Each hardware peripheral connected to the SBC is abstracted out as an individual ROS node. Inter Process Communication is handled entirely by ROS using messages and services. This maintains the modularity of the system and provides a clean API for communication.</p>
+								</div>
+							</div>
+
+
+							<!-- end toggle -->
+							<div class="toggle">
+								<h3 class="toggle-heading">
+									Processing Layer
+									<i class="toggle-down fa fa-plus"></i>
+									<i class="toggle-up fa fa-minus"></i>
+								</h3>
+								<div class="toggle-content">
+									<p>Responsible for processing sensor information (such as videos, and IMU (filtering) and providing meaningful data (such as the centre of buoys visible in the video).</p>
 								</div>
 							</div><!-- end toggle -->
 							<div class="toggle">
 								<h3 class="toggle-heading">
-									Image Processor
+									Apllication Layer and Communicator
 									<i class="toggle-down fa fa-plus"></i>
 									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>This process receives the state of the machine from the mission planner and runs the corresponding image processing algorithm</p>
-								</div>
-							</div><!-- end toggle -->
-							<div class="toggle">
-								<h3 class="toggle-heading">
-									Communicator
-									<i class="toggle-down fa fa-plus"></i>
-									<i class="toggle-up fa fa-minus"></i>
-								</h3>
-								<div class="toggle-content">
-									<p>This process is the abstract interface to the other micro controller boards in the system</p>
+									<p>Uses data from the processing layer to do useful things. The application layer contains the debug interfaces and the mission planning nodes</p>
 								</div>
 							</div>
 							<div class="toggle">
@@ -344,7 +257,7 @@
 									<i class="toggle-up fa fa-minus"></i>
 								</h3>
 								<div class="toggle-content">
-									<p>Matsya's debug platform provides on a web-based interface. A web-server (Apache 2) runs on the Pandaboard and listens for user requests. A user can send requests through any browser. This means that any person with a browser and a network access can send requests to Matsya debugging platform</p>
+									<p>Matsya's debug platform provides on a Qt-based interface. A ROS-node runs on the user-pc and posts for user requests to the SBC on the vehicle.</p>
 								</div>
 							</div>
 							<!-- end toggle -->
