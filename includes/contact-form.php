@@ -6,7 +6,7 @@
        $message = htmlentities($_POST['contact_message']);
 
        // set here
-       $to = 'contact@auv-iitb.org';
+       $to = 'meetshah1995@gmail.com';
 
        $body = <<<HTML
 $message
